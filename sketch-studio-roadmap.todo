@@ -1,0 +1,8 @@
+ - Start
+✔ Iniciar Projeto (npm init) @done(22-06-18 15:10)
+✔ Instalar as bibliotecas (express/nodemon) @done(22-06-18 15:10)
+✔ Adicionar pasta .gitignore e colocar node_modules @done(22-06-18 15:10)
+✔ Instalar express-generator para estrutura do projeto (npm install -g express-generator) @done(22-06-18 15:10)
+     ✔ Criar Estrutura (express --view=ejs myapp) @done(22-06-18 15:10)
+✔ Colocar nodemon para dev com ("scripts"{ "dev": "nodemon ./bin/www"}) @done(22-06-18 15:10)
+
