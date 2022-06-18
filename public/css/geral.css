@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size:14px 
+}
+ 
+/* Formularios login/registro/resetPassword */
+.form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.form > button {
+    font-family: 'Abel', sans-serif;
+    padding: 12px 10px;
+    border: 0;
+    background: #567EBB;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+  }

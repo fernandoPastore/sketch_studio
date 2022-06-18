@@ -6,3 +6,9 @@
      ✔ Criar Estrutura (express --view=ejs myapp) @done(22-06-18 15:10)
 ✔ Colocar nodemon para dev com ("scripts"{ "dev": "nodemon ./bin/www"}) @done(22-06-18 15:10)
 
+- Desenvolvendo as Paginas (html/CSS)
+
+    - Views 
+    ✔ login @done(22-06-18 18:27)
+    ✔ registro @done(22-06-18 18:31)
+    ☐ resetSenha
