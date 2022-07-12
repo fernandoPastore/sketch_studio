@@ -5,6 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
+
 }
 
 html {
@@ -21,7 +22,7 @@ html {
     font-family: 'Abel', sans-serif;
     padding: 12px 10px;
     border: 0;
-    background: #567EBB;
+    background:#1F1F20;
     border-radius: 3px;
     margin-top: 10px;
     color: #fff;
