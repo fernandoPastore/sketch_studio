@@ -120,6 +120,13 @@ h1 {
   box-shadow: -4px 0px 10px 5px #00000056;
 
 }
+form label {
+  color: #fff;
+  font-size:20px;
+  width:300px;
+  margin-top: 8px;
+  margin-bottom:8px;
+}
 
 .form-field {
   height: 46px;
@@ -131,7 +138,6 @@ h1 {
   border-radius: 4px;
   font-family: 'Abel', sans-serif;
   outline: 0;
-  margin-top: 35px;
 }
 
 #btn-m1{
