@@ -1,15 +1,35 @@
- - Start
-✔ Iniciar Projeto (npm init) @done(22-06-18 15:10)
-✔ Instalar as bibliotecas (express/nodemon) @done(22-06-18 15:10)
-✔ Adicionar pasta .gitignore e colocar node_modules @done(22-06-18 15:10)
-✔ Instalar express-generator para estrutura do projeto (npm install -g express-generator) @done(22-06-18 15:10)
-     ✔ Criar Estrutura (express --view=ejs myapp) @done(22-06-18 15:10)
-✔ Colocar nodemon para dev com ("scripts"{ "dev": "nodemon ./bin/www"}) @done(22-06-18 15:10)
+✔ Start @done(22-07-15 08:51)
+- Iniciar Projeto (npm init)
+- Instalar as bibliotecas (express/nodemon)
+- Adicionar pasta .gitignore e colocar node_modules
+- Instalar express-generator para estrutura do projeto (npm install -g express-generator)
+     - Criar Estrutura (express --view=ejs myapp)
+- Colocar nodemon para dev com ("scripts"{ "dev": "nodemon ./bin/www"})
 
-- Desenvolvendo as Paginas (html/CSS)
+✔ Desenvolvendo as Paginas (html/CSS) @done(22-07-15 08:51)
 
     - Views 
-    ✔ login @done(22-06-18 18:27)
-    ✔ registro @done(22-06-18 18:31)
-    ✔ resetSenha @done(22-06-19 18:48)
-    ✔ homePage @done(22-07-11 20:16)
+    - login
+    - registro
+    - resetSenha
+    - homePage
+    - admPage
+
+☐ Definindo as rotas (express)
+
+    - Rotas
+        -/login
+        -/registro
+        
+
+✔ Desenvolvendo o Banco de dados (Sequelize) @done(22-07-15 08:51)
+
+- Configurando as medidas do Sequelize
+    - Instalar o sequelize(npm i sequelize)
+        - Criar arquivo .sequelizerc e passar os path
+        - Iniciar o sequelize
+    - Instalar o dotenv (npm install dotenv)
+        - Configurar config com a dotenv
+        - Criar o .env e envia-lo para o .gitignore
+        - Criar o .env.example
+        

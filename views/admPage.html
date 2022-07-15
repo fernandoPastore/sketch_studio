@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/admPage.css">
+  <link rel="stylesheet" href="/public/css/geral.css">
+  <title>Sketch Studio</title>
+</head>
+<body>
+  <main>
+  <header>
+    <div id="logo">
+      <img src="/public/img/Logo.jpg" alt="Logo">
+    </div>  
+      <a id="menu-btn" onclick="openNav()">&#9776; OPEN</a>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home Page</a>
+      <a href="#">Minha Conta</a>
+      <a href="#">Comentários</a>
+      <a href="#">Sobre Nós</a>
+      <a href="#">Discord</a>
+    </div>
+  </header>
+    <section class="adm-container">
+      <form class="form-adm" action="">
+        <img src="">
+          <label>Nome: 
+            <input type="name">
+          </label>
+          <label>Email:
+            <input type="email">
+          </label>
+          <label>Celular:
+            <input type="text" name="celular">
+          </label>
+          <label>Cidade:
+            <input type="text" name="city">
+          </label>
+          <label>Estado:
+            <input type="text" name="state">
+          </label>
+      </form>
+          <div>
+            <button type="submit">Salvar</button>
+          </div>
+    </section>
+    <footer>
+        <a href="">Sobre Nós</a>
+        <a href="">Comentários</a>
+        <a href="">Discord</a>
+    </footer>
+  </main>
+    <script src="/public/js/menuDrop.js"></script>
+</body>
+</html>
