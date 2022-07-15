@@ -8,12 +8,15 @@
 
 ✔ Desenvolvendo as Paginas (html/CSS) @done(22-07-15 08:51)
 
+
+
     - Views 
     - login
     - registro
     - resetSenha
     - homePage
     - admPage
+    - comentsPage
 
 ☐ Definindo as rotas (express)
 
@@ -33,3 +36,4 @@
         - Criar o .env e envia-lo para o .gitignore
         - Criar o .env.example
         
+    
