@@ -28,7 +28,7 @@
     flex: 1;
     background-color: #3E4B51;
     transition: 2s;
-    background-image: url("/public/img/img_background.jpg");
+    background-image: url("/img/img_background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

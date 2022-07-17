@@ -8,8 +8,6 @@
 
 ✔ Desenvolvendo as Paginas (html/CSS) @done(22-07-15 08:51)
 
-
-
     - Views 
     - login
     - registro
@@ -21,9 +19,9 @@
 ☐ Definindo as rotas (express)
 
     - Rotas
-        -/login
-        -/registro
-        
+        - /login
+        - /registro
+        -
 
 ✔ Desenvolvendo o Banco de dados (Sequelize) @done(22-07-15 08:51)
 
