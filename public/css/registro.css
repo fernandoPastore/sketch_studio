@@ -1,5 +1,5 @@
 body{
-    background-image: url("/public/img/img_background.jpg");
+    background-image: url("/img/img_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -17,7 +17,7 @@ body{
 main {
     background-color: white;
     display: flex;
-    height: 500px;
+    height: 550px;
     width: 22rem;
     padding: 2rem;
     flex-direction: column;

@@ -1,3 +1,4 @@
+
 .comentarios{
     background-color:#1F1F20;
     padding: 15px;
@@ -17,7 +18,7 @@
 }
 
 .divisoes{
-    background-color: gray;
+    background-color: #FFF;
     width: 500px;
     height: 500px;
     display: flex;
@@ -69,8 +70,8 @@
  .sessao-imagem{
     width: 200px;
     height: 200px;
-    background-color: blue;
-    border-radius: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
     
  }
 
@@ -81,11 +82,11 @@
 
  }
  .inputNome{
-    width: 600px;
-    height: 50px;
+    width: 450px;
+    height: 46px;
     border-radius: 10px;
     border: none;
-    font-size: 30px;
+    font-size: 22px;
     
  }
  .coment{
@@ -93,11 +94,17 @@
     height: 400px;
     border-radius: 10px
  }
+ 
+ 
  button{
-    padding: 50px;
+    background:transparent;
+    font-size:22px;
+    color: #fff;
+    height:60px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
+    border: 3px solid #fff;
     align-self: flex-end;
  }
  

@@ -16,22 +16,42 @@
     - admPage
     - comentsPage
 
+✔ Desenvolvendo o Banco de dados (Sequelize) @done(22-07-15 08:51)
+    
+    - Configurando as medidas do Sequelize
+        - Instalar o sequelize(npm i sequelize)
+            - Criar arquivo .sequelizerc e passar os path
+            - Iniciar o sequelize
+        - Instalar o dotenv (npm install dotenv)
+            - Configurar config com a dotenv
+            - Criar o .env e envia-lo para o .gitignore
+            - Criar o .env.example
+
+✔ Criando as migrations/ Models/ Seeders @done(22-07-17 17:32)
+
+    - Criar o bando de dados (npx sequelize db:create --name)
+        ele ira puxar do .env o nome da tabela que deixou lá em DBNAME
+    - Criar as migrations (users/comentarios) e executa-lás (npx sequelize db:migrate) executando as tabelas no DB
+        Criando a estrutura dos campos das tabelas     
+    - Criar as Models (Users/ Comentarios)
+
+    - Criar seeders (npx sequelize seeders:create --name) e executar (npx sequelize db:seeders)
+        Fazer a estrutura que vai popular as tabelas no DB 
+    - Instalar a biblioteca (bcrypt) e usar nas aplicações
+
+
+
 ☐ Definindo as rotas (express)
 
     - Rotas
-        - /login
-        - /registro
-        -
+     - router.get('/login',UserController.showLogin); 
+     - router.get('/registro', UserController.showRegistro);
+     - router.get('/resetSenha', UserController.showResetSenha);
+     - router.get('/homePage', UserController.showHomePage);
+     - router.post('/login', UserController.Login);
+     - router.post('/registro', UserController.Registrar);
+     - router.get('/EditPage',UserController.showEditPage);
 
-✔ Desenvolvendo o Banco de dados (Sequelize) @done(22-07-15 08:51)
 
-- Configurando as medidas do Sequelize
-    - Instalar o sequelize(npm i sequelize)
-        - Criar arquivo .sequelizerc e passar os path
-        - Iniciar o sequelize
-    - Instalar o dotenv (npm install dotenv)
-        - Configurar config com a dotenv
-        - Criar o .env e envia-lo para o .gitignore
-        - Criar o .env.example
         
     
