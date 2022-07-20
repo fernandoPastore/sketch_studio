@@ -103,7 +103,35 @@
   .a6 {
     animation-delay: 2.5s;
   }
+
+  input:focus{
+    border-color: blue !important;
+  }
+  input:invalid{
+    border-color: red
+  }
+  input:valid{
+    border-color: green;
+  }
+ 
+  span{
+    position: relative;
+  }
+  input:invalid + span::before{
+    content: '✖';
+    color: red;
+  }
+  input:valid + span::before{
+    content: '✓';
+    color: green;
+  }
+  input + span::before{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 270px;
+  }
   
+
   @keyframes move {
     0% {
       opacity: 0;
