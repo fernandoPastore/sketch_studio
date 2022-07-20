@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Page</title>
-    <link rel="stylesheet" href="../public/css/comentsPage.css">
-    <link rel="stylesheet" href="/public/css/geral.css">
+    <link rel="stylesheet" href="/css/comentsPage.css">
+    <link rel="stylesheet" href="/css/geral.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
+    <%- include("./partials/header") %>
     <section class="comentarios">
         <h1>Comentários</h1>
     </section>
@@ -94,6 +96,7 @@
             <button>ENVIAR</button>
         </div>
     </section>
-
+    <%- include('./partials/footer') %> 
+    <script src="/js/menuDrop.js"></script>
 </body>
 </html>

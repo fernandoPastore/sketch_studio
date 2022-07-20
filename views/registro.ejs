@@ -17,10 +17,13 @@
             <img class="#" src="/img/Logo.jpg" alt="logo">
             <h4 class="#">Crie uma Conta Gratuita agora</h4>
         </div>
-        <form action="" method="POST" class="form">
+        <% if (typeof erro !== 'undefined'){ %>
+                <h3 class="erro"><%= erro %></h3>
+        <% } %>
+        <form action="/registro" method="POST" class="form">
             <input type="text" class="form-field" name="nome" placeholder="Nome Completo">
-            <input type="email" class="form-field" placeholder="Email">
-            <input type="password" class="form-field" placeholder="Senha">
+            <input type="email" class="form-field" name="email" placeholder="Email">
+            <input type="password" class="form-field" name="senha" placeholder="Senha">
             <input type="password" class="form-field" placeholder="Confimar Senha">
             <button type="submit">ENVIAR</button>
             <p class="#"><a href="#">Já é cadastrado?</a></p>

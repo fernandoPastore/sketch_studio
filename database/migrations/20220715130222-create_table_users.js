@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.DataTypes.STRING(170),
         allowNull: false
       },
-      telefone:{
+      telefone: {
         type: Sequelize.DataTypes.STRING(11),
         allowNull: false
       },

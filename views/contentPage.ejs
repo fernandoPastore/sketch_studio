@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContentPage</title>
-    <link rel="stylesheet" href="/public/css/geral.css">
-    <link rel="stylesheet" href="/public/css/contentPage.css">
+    <link rel="stylesheet" href="/css/geral.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contentPage.css">
 </head>
 <body>
+    <%- include("./partials/header") %>
     <section class="section-um">
         <h1 class="titulo">Calculadora de Dimensão Modal</h1>
         <div>
             <label>
                 Largura:  
                 <input 
-                     type="text" 
-                     placeholder="Digite a largura da sala">
+                     type="text">
             </label>
             <label>
                 Comprimento:  
                 <input 
-                     type="text" 
-                     placeholder="Digite o comprimento da sala">
+                     type="text">
             </label>
             <label>
                 Largura:  
                 <input 
-                     type="text" 
-                     placeholder="Digite a altura da sala">
+                     type="text">
             </label>
         </div>
         <div class="grafico"></div>
@@ -54,7 +53,7 @@
                              type="text">
                     </label>
                 </div>
-                <img src="/public/img/contentimg1.jpg" alt="">
+                <img src="/img/contentimg1.jpg" alt="">
             </div>
 
         </div>
@@ -114,6 +113,7 @@
             <p class="p-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ut odio nulla faucibus velit egestas. Nulla ut erat pretium massa. Curabitur id enim sollicitudin egestas a, dignissim ac mauris. Elit, dui quis convallis in eget a vitae, turpis. A auctor varius eu in semper. Aliquam lacus orci feugiat aenean euismod.</p>
         </div>
     </section>
-
+    <%- include('./partials/footer') %> 
+    <script src="/js/menuDrop.js"></script>
 </body>
 </html>
