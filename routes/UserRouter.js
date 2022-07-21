@@ -15,5 +15,6 @@ router.get('/editPage', isLogin,UserController.showEditPage);
 router.put('/editPage', isLogin,UserController.editUser);
 router.get('/contentPage', isLogin,UserController.showContentPage);
 router.get('/comentsPage', isLogin,UserController.showComentsPage);
+router.get('/sobreNos', isLogin,UserController.showSobreNos);
 
 module.exports = router;

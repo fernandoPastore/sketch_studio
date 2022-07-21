@@ -68,11 +68,11 @@ main {
     font-size: 14px;
   }
 
-footer {
-    margin-top: 40px;
+.btn-nos {
+    margin-top:100px;
 }
 
-footer > button {
+.btn-nos button {
     width:17rem;
     padding: 12px 10px;
     border: 0;
@@ -84,6 +84,6 @@ footer > button {
     box-shadow: -4px 0px 10px 5px #00000056;
 }
 
-footer > button > a {
+.btn-nos button > a {
     color: #fff;
 }

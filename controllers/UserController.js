@@ -56,6 +56,9 @@ const UserController = {
     },
     showComentsPage: (req,res)=> {
         res.render('comentsPage')
+    },
+    showSobreNos: (req,res)=> {
+        res.render('sobreNos')
     }
 }
 
