@@ -19,19 +19,61 @@
             <img class="#" src="/img/Logo.jpg" alt="logo">
             <h4 class="#">Crie uma Conta Gratuita agora</h4>
         </div>
-        <form action="" method="POST" class="form">
-            <input id="nome" type="text" class="form-field" name="nome" placeholder="Nome Completo" required maxlength="50"><span></span>
-            <input id="email" type="email" class="form-field" placeholder="Email" required maxlength="50"> <span></span>
-            <input id="senha" type="password" class="form-field" placeholder="Senha" required minlength="6" maxlength="10"> <span></span>
-            <input id="confirmar-senha" type="password" class="form-field" placeholder="Confimar Senha" required minlength="6" maxlength="10"><span></span>
-            <button type="submit">ENVIAR</button>
-            <p class="#"><a href="#">Já é cadastrado?</a></p>
+        <form action="" method="POST" class="form" id="form">
+            <div class="form-control">
+        
+                <label for="username" >Nome</label>
+                <input type="text" id="username">
+                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>Email</label>
+                <input type="email" id="email">
+                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>Senha</label>
+                <input type="password" id="password">
+                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>Confirme sua senha</label>
+                <input type="password" id="password-two" >
+                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <button type="submit" >ENVIAR</button>
+            
         </form>
+        <p class="cadastrado"><a href="#">Já é cadastrado ?</a></p>
     </main>
     <footer>
         <button class="#"><a href="#">Quem Somos</a></button>
     </footer>
 </section>
-<script src="/public/js/index.js"></script>
+<script src="/js/registro.js"></script>
+
 </body>
 </html>
