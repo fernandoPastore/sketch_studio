@@ -40,6 +40,9 @@ const UserController = {
     showLogin: (req,res)=> {
        res.render('login.ejs',{})
     },
+    showAdmin: (req,res)=>{
+        res.render('admin.ejs')
+    },
 
     Login: async (req,res)=> {
         try{

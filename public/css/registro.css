@@ -87,3 +87,30 @@ footer > button {
 footer > button > a {
     color: #fff;
 }
+span{
+    position: relative;
+}
+
+input:focus{
+    border-color: blue!important ; 
+}
+input:invalid{
+    border-color: red;
+}
+input:valid{
+    border-color: green;
+}
+input:invalid + span::before{
+    content: '✖';    
+    color: red;
+}
+input:valid + span::before{
+    content: '✓';    
+    color: green;
+    font-weight: bolder;
+}
+input + span::before{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 230px;
+}

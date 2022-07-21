@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/registro.css">
     <link rel="stylesheet" href="/css/geral.css">
     <title>Sketch Studio</title>
+    
+    
 </head>
 
 <body>
@@ -18,10 +20,10 @@
             <h4 class="#">Crie uma Conta Gratuita agora</h4>
         </div>
         <form action="" method="POST" class="form">
-            <input type="text" class="form-field" name="nome" placeholder="Nome Completo">
-            <input type="email" class="form-field" placeholder="Email">
-            <input type="password" class="form-field" placeholder="Senha">
-            <input type="password" class="form-field" placeholder="Confimar Senha">
+            <input id="nome" type="text" class="form-field" name="nome" placeholder="Nome Completo" required maxlength="50"><span></span>
+            <input id="email" type="email" class="form-field" placeholder="Email" required maxlength="50"> <span></span>
+            <input id="senha" type="password" class="form-field" placeholder="Senha" required minlength="6" maxlength="10"> <span></span>
+            <input id="confirmar-senha" type="password" class="form-field" placeholder="Confimar Senha" required minlength="6" maxlength="10"><span></span>
             <button type="submit">ENVIAR</button>
             <p class="#"><a href="#">Já é cadastrado?</a></p>
         </form>
@@ -30,5 +32,6 @@
         <button class="#"><a href="#">Quem Somos</a></button>
     </footer>
 </section>
+<script src="/public/js/index.js"></script>
 </body>
 </html>
