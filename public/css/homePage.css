@@ -110,36 +110,6 @@ h1 {
   font-weight: 300;
 }
 
-.form {
-  align-items: center;
-  padding:30px;
-  width: 380px;
-  height: 550px;
-  border-radius: 5px;
-  background:#1F1F20;
-  box-shadow: -4px 0px 10px 5px #00000056;
-
-}
-form label {
-  color: #fff;
-  font-size:20px;
-  width:300px;
-  margin-top: 8px;
-  margin-bottom:8px;
-}
-
-.form-field {
-  height: 46px;
-  width:300px;
-  text-align: center;
-  font-size: 20px;
-  padding: 0 16px;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  font-family: 'Abel', sans-serif;
-  outline: 0;
-}
-
 #btn-m1{
   margin-top:30px;
   height: 60px;
@@ -157,3 +127,7 @@ form label {
   border-radius: 5px;
 }
  
+.ref-contentPage {
+  text-decoration: none;
+  color: #fff;
+}

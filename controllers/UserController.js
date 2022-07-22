@@ -42,21 +42,11 @@ const UserController = {
         }
     },  
     showContentPage: (req,res)=> {
-        res.render('contentPage')
+        const {studio} = req.session
+
+
+        res.render('contentPage', {studio})
     },  
-    createStudio: (req,res)=> {
-
-        const {largura,comprimento,altura} = req.body
-
-        let studio = {largura,comprimento,altura};
-
-        req.session.studio = studio
-
-        res.send(req.session.studio)
-    },
-    showComentsPage: (req,res)=> {
-        res.render('comentsPage')
-    },
     showSobreNos: (req,res)=> {
         res.render('sobreNos')
     }

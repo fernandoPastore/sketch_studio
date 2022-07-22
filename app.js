@@ -9,6 +9,7 @@ const logger = require('morgan');
 
 //Importandno rotas
 const UserRouter = require('./routes/UserRouter');
+const ComentsRouter = require('./routes/ComentsRouter');
 
 
 const app = express();
@@ -34,6 +35,7 @@ app.use(session({
 
 // Usando Rotas
 app.use(UserRouter);
+app.use(ComentsRouter);
 
 
 // catch 404 and forward to error handler

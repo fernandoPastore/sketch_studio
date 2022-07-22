@@ -35,13 +35,5 @@ module.exports = (sequelize, DataTypes) => {
             paranoid: true
         }
     )
-
-    User.associate = (models) =>{
-        User.hasMany(
-            models.Comentarios,
-            {foreignKey:"users_id", as:"comentarios"}
-        );
-    }
-
     return User;
 }
