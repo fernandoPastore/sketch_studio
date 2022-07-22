@@ -6,50 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/editPage.css">
+  <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/geral.css">
+  <link rel="stylesheet" href="/css/footer.css">
   <title>Sketch Studio</title>
 </head>
+
 <body>
   <main>
-  <header>
-    <div id="logo">
-      <img src="/img/Logo.jpg" alt="Logo">
-    </div>  
-      <a id="menu-btn" onclick="openNav()">&#9776; OPEN</a>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Home Page</a>
-      <a href="#">Minha Conta</a>
-      <a href="#">Comentários</a>
-      <a href="#">Sobre Nós</a>
-      <a href="#">Discord</a>
-    </div>
-  </header>
+    <%- include('./partials/header') %>
     <section class="adm-container">
-      <form class="form-adm" action="">
+      <form class="form-adm" action="/editPage?_method=PUT" method="POST">
         <img src="">
           <label>Nome: 
-            <input type="name">
+            <input type="name" name="nome" value="<%= user.nome %>">
           </label>
           <label>Email:
-            <input type="email">
+            <input type="email" name="email" value="<%= user.email %>">
           </label>
           <label>Senha:
-            <input type="password">
+            <input type="password" name="senha" value="<%= user.senha %>">
+
           </label>
           <label>Telefone:
-            <input type="text" name="celular">
+            <input type="text" name="telefone" value="<%= user.telefone %>">
           </label>
-      </form>
           <div>
             <button type="submit">Salvar</button>
           </div>
+      </form>
     </section>
-    <footer>
-        <a href="">Sobre Nós</a>
-        <a href="">Comentários</a>
-        <a href="">Discord</a>
-    </footer>
+    <%- include('./partials/footer') %> 
   </main>
     <script src="/js/menuDrop.js"></script>
 </body>

@@ -1,9 +1,11 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
+const methodOverride = require('method-override');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const logger = require('morgan');
+
 
 //Importandno rotas
 const UserRouter = require('./routes/UserRouter');
@@ -21,6 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
 
 //Sessions
 app.use(session({

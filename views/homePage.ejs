@@ -1,6 +1,5 @@
 
-<%- include("./partials/header") %>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
   
   <head>
@@ -9,26 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/homePage.css">
     <link rel="stylesheet" href="/css/geral.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>Sketch Studio</title>
   </head>
   
   <body>
-    <section class="home-container"> -->
-      <!-- <header>
-        <img id="logo" src="/img/Logo.jpg" alt="Logo">
-        <a id="menu-btn" onclick="openNav()">&#9776; OPEN</a>
+    <header>
+      <img id="logo" src="/img/Logo.jpg" alt="Logo">
+      <a id="menu-btn" onclick="openNav()">&#9776; OPEN</a>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home Page</a>
-        <a href="#">Minha Conta</a>
+        <a href="/homePage">Home Page</a>
+        <a href="/editPage">Minha Conta</a>
         <a href="#">Comentários</a>
         <a href="#">Sobre Nós</a>
         <a href="#">Discord</a>
       </div>
-    </header> -->
+    </header>
+    <section class="home-container">
+
     <div class="main-container">
       <div class="textContent">
-        <h2>Bem Vindo Ao Sketch Studio</h2>
+        <h2>Bem Vindo Ao Sketch Studio <%= user.nome %> </h2>
         <h1>
 
           Nessa plataforma você aprenderá o necessário <br>
@@ -39,26 +40,22 @@
 
         </h1>
       </div>
-      <form class="form">
+      <form action="/homePage" method="post"class="form">
           <h2 id="textForm">Preencha com os Parâmetros do Seu Futuro Studio</h2>
             <label>Largura:
-              <input type="number" name="largura" step="0.1" min="0" class="form-field" placeholder="cm">
+              <input type="number" name="largura" step="0.1" min="0" class="form-field" placeholder="m">
             </label>
             <label >Comprimento:
-              <input type="number" name="comprimento" step="0.1" min="0" class="form-field" placeholder="cm">
+              <input type="number" name="comprimento" step="0.1" min="0" class="form-field" placeholder="m">
             </label>
             <label >Altura:
-              <input type="number" name="Altura" step="0.1" min="0" class="form-field" placeholder="cm">
+              <input type="number" name="altura" step="0.1" min="0" class="form-field" placeholder="m">
             </label>
           <button id="btn-m1" type="submit">Crie Seu Studio</button>
         </form>
     </div>
-    <footer>
-      <a href="">Sobre Nós</a>
-      <a href="">Comentários</a>
-      <a href="">Discord</a>
-    </footer>
-  </section>
-  <script src="/js/menuDrop.js"></script>
+<%- include('./partials/footer') %> 
+</section>
+<script src="/js/menuDrop.js"></script>
 </body>
 </hmtl>

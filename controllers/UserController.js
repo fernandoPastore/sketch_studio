@@ -1,76 +1,64 @@
 const bcrypt = require('bcrypt');
-const {User} = require('../models')
-const fs = require('fs');
-
-
+const {User} = require('../models');
 
 const UserController = {
-    showRegistro:(req,res)=> {
-    res.render('registro')
-    },
-
-    Registrar: async(req,res)=>{
-        try {
-            const {nome, email, senha} = req.body;
-
-            const hash = bcrypt.hashSync(senha,10);
-
-            const verificarUsuarioCadastrado = await User.findOne({where: {email:email}});
-            
-            if(verificarUsuarioCadastrado){
-
-                return res.render('registro', {erro:1, old: req.body})   
-            }
-        
-            const newUser = await User.create(
-                {
-                    nome,
-                    email,
-                    senha: hash,
-                })
-
-        return res.redirect('/login')
-
-        } catch (error){
-            console.log(error)
-        }
-        
-    },
-    
-    showLogin: (req,res)=> {
-       res.render('login.ejs',{})
-    },
-    showAdmin: (req,res)=>{
-        res.render('admin.ejs')
-    },
-
-    Login: async (req,res)=> {
+    showEditPage: async(req,res)=> {
         try{
-        const {email,senha} = req.body
+            let user = await User.findByPk(req.session.user.id);
 
+            const {senha} = req.session.user;
 
-        let user = await User.findOne({where: {email: email}})
+            user.senha = bcrypt.compareSync(senha, user.senha);
+            
+            return res.render('editPage', {user});
 
-        if(!user || bcrypt.compareSync(senha,user.senha)){
-            return res.render('login', {error:'Usuário e senha incorretos ou não existe'})
+        }catch(erro){
+            console.log(erro);
         }
-        res.redirect('/homePage')
-        }catch (error){
-            console.log(error)
+    },
+    editUser: async(req, res) => {
+        try{
+        const {nome, email, senha, telefone} = req.body
+
+        const hash = bcrypt.hashSync(senha,10)
+
+        const {id} = req.session.user
+
+        const user = await User.update({
+            nome,
+            email, 
+            senha:hash,
+            telefone,
+        },
+        {
+            where:{id}
+
+        });
+
+        return res.redirect('/homePage');
+
+        }catch (erro) {
+            console.log(erro)
         }
+    },  
+    showContentPage: (req,res)=> {
+        res.render('contentPage')
+    },  
+    createStudio: (req,res)=> {
 
+        const {largura,comprimento,altura} = req.body
+
+        let studio = {largura,comprimento,altura};
+
+        req.session.studio = studio
+
+        res.send(req.session.studio)
     },
-
-    showResetSenha:(req,res)=> {
-        res.render('resetSenha')
+    showComentsPage: (req,res)=> {
+        res.render('comentsPage')
     },
-
-    showHomePage: (req,res)=> {
-        res.render('homePage.ejs')  
-    },
-
-    showEditPage: (req,res)=> {
-        res.render('editPage')
+    showSobreNos: (req,res)=> {
+        res.render('sobreNos')
     }
 }
 

@@ -1,14 +1,20 @@
 var express = require('express');
 var router = express.Router();
+const AuthController = require('../controllers/AuthController');
 const UserController = require('../controllers/UserController');
+const isLogin = require('../middlewares/isLogin')
 
-router.get('/admin', UserController.showAdmin);
-router.get('/login',UserController.showLogin);
-router.get('/registro', UserController.showRegistro);
-router.get('/resetSenha', UserController.showResetSenha);
-router.get('/homePage', UserController.showHomePage);
-router.post('/login', UserController.Login);
-router.post('/registro', UserController.Registrar);
-router.get('/EditPage',UserController.showEditPage);
+router.get('/login',AuthController.showLogin);
+router.get('/registro', AuthController.showRegistro);
+router.get('/resetSenha', AuthController.showResetSenha);
+router.get('/homePage', isLogin,AuthController.showHomePage);
+router.post('/homePage',isLogin,UserController.createStudio)
+router.post('/login',AuthController.Login);
+router.post('/registro', AuthController.Registrar);
+router.get('/editPage', isLogin,UserController.showEditPage);
+router.put('/editPage', isLogin,UserController.editUser);
+router.get('/contentPage', isLogin,UserController.showContentPage);
+router.get('/comentsPage', isLogin,UserController.showComentsPage);
+router.get('/sobreNos', isLogin,UserController.showSobreNos);
 
 module.exports = router;

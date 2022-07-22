@@ -6,6 +6,8 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+
 .botao{
   display: flex;
   width: 100%;
@@ -24,6 +26,8 @@
 }
 main{
   position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 .carrosel{
     width: 100%;

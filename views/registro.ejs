@@ -19,13 +19,14 @@
             <img class="#" src="/img/Logo.jpg" alt="logo">
             <h4 class="#">Crie uma Conta Gratuita agora</h4>
         </div>
-        <form action="" method="POST" class="form" id="form">
+
+        <form action="/registro" method="POST" class="form" id="form">
             <div class="form-control">
         
                 <label for="username" >Nome</label>
-                <input type="text" id="username">
-                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
-                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+                <input type="text" id="username" name="nome">
+                <i class="img-success" ><img src="./img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./img/error-icon.svg" alt=""></i>
 
                 <small>Error Message</small>
 
@@ -34,9 +35,9 @@
             <div class="form-control">
 
                 <label>Email</label>
-                <input type="email" id="email">
-                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
-                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+                <input type="email" id="email" name="email">
+                <i class="img-success" ><img src="./img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./img/error-icon.svg" alt=""></i>
 
                 <small>Error Message</small>
 
@@ -45,9 +46,9 @@
             <div class="form-control">
 
                 <label>Senha</label>
-                <input type="password" id="password">
-                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
-                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+                <input type="password" id="password" name="senha">
+                <i class="img-success" ><img src="./img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./img/error-icon.svg" alt=""></i>
 
                 <small>Error Message</small>
 
@@ -57,21 +58,21 @@
 
                 <label>Confirme sua senha</label>
                 <input type="password" id="password-two" >
-                <i class="img-success" ><img src="./images/success-icon.svg" alt=""></i>
-                <i class="img-error" ><img src="./images/error-icon.svg" alt=""></i>
+                <i class="img-success" ><img src="./img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="./img/error-icon.svg" alt=""></i>
 
                 <small>Error Message</small>
 
             </div>
 
             <button type="submit" >ENVIAR</button>
-            
-        </form>
-        <p class="cadastrado"><a href="#">Já é cadastrado ?</a></p>
+
+            </form>
+        <div class="btn-nos">
+            <button class="#"><a href="#">Quem Somos</a></button>
+        </div>
+
     </main>
-    <footer>
-        <button class="#"><a href="#">Quem Somos</a></button>
-    </footer>
 </section>
 <script src="/js/registro.js"></script>
 

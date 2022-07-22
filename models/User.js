@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
             },
             telefone:{
                 type: DataTypes.STRING(11),
-                allowNull: false
+                allowNull: true
             },
             foto: {
                 type: DataTypes.STRING(200),

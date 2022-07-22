@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós Sketch Studio</title>
-    <link rel="stylesheet" href="/public/css/sobreNos.css">
-    <link rel="stylesheet" href="/public/css/glider.css">
+    <link rel="stylesheet" href="/css/geral.css">
+    <link rel="stylesheet" href="/css/sobreNos.css">
+    <link rel="stylesheet" href="/css/glider.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 
 <body>
 
     <main>
+        <%- include('./partials/header') %>
         <section class="botao">
             <button class="sobre-nos">Sobre Nós</button>
         </section>
@@ -22,19 +26,19 @@
                 <div class="glider">
                     <div>
                         <div class="conteudo">
-                            <img src="/public/img/img_background.jpg" alt="">
+                            <img src="/img/img_background.jpg" alt="">
                             <p class="paragrafo-carrosel">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
                         </div>
                     </div>
                     <div>
                         <div class="conteudo">
-                            <img src="/public/img/img_background.jpg" alt="">
+                            <img src="/img/img_background.jpg" alt="">
                             <p class="paragrafo-carrosel">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
                         </div>
                     </div>
                     <div>
                         <div class="conteudo">
-                            <img src="/public/img/img_background.jpg" alt="">
+                            <img src="/img/img_background.jpg" alt="">
                             <p class="paragrafo-carrosel">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
                         </div>
                     </div>
@@ -42,10 +46,10 @@
 
                 <section class="glider-botoes">
                     <button aria-label="Previous" class="glider-prev">
-                        <img src="/public/img/setaEsquerda.png" alt="" class="seta">
+                        <img src="/img/setaEsquerda.png" alt="" class="seta">
                     </button>
                     <button aria-label="Next" class="glider-next">
-                        <img src="/public/img/setaDireita.png" alt="" class="seta">
+                        <img src="/img/setaDireita.png" alt="" class="seta">
                     </button>
                 </section>
 
@@ -55,11 +59,10 @@
 
 
     </main>
-
-    <footer></footer>
-
+    <%- include('./partials/footer') %> 
 </body>
-<script src="/public/js/glider.js"></script>
-<script src="/public/js/index.js"></script>
+<script src="/js/glider.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/index.js"></script>
 
 </html>
