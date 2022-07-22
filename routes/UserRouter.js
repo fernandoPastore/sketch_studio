@@ -16,4 +16,5 @@ router.get('/contentPage', isLogin,UserController.showContentPage);
 router.get('/sobreNos', isLogin,UserController.showSobreNos);
 
 
+
 module.exports = router;
