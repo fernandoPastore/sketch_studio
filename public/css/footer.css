@@ -11,23 +11,23 @@ footer {
     background-color: #1F1F20;
   }
   
-  footer a {
+  footer .foot {
     font-size:18px;
     color: #fff;
   }
   
-  footer a:hover {
+  footer .foot:hover {
     font-size:18px;
     color: #fff;
     font-size: 180%;
     transition: 1s;
   }
   
-  a {
+  .foot {
     cursor: pointer;
   }
   
-  a:hover {
+  .foot:hover {
     font-size: 220%;
     transition: 1s;
   }

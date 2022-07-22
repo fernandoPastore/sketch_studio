@@ -17,85 +17,31 @@
     </section>
 
     <section class="carrossel">
-       
-        <div class="divisoes">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
+     <% comentarios.forEach((comentario)=>{ %>
+
+         <div class="divisoes">
+           
+            <p><strong>Descrição:</strong> <%= comentario.texto %></p>
             <div class="carrossel-img">
                 <div class="imagem-nome">
-                  
                 </div>
-                
-                <h1 class="nome">Nome</h1>
-            </div>            
-
-        </div>
-        <div class="divisoes">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
-            <div class="carrossel-img">
-                <div class="imagem-nome">
-                  
-                </div>
-                
-                <h1 class="nome">Nome</h1>
-            </div>            
-
-        </div>
-        <div class="divisoes">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
-            <div class="carrossel-img">
-                <div class="imagem-nome">
-                  
-                </div>
-                
-                <h1 class="nome">Nome</h1>
-            </div>            
-
-        </div>
-        <div class="divisoes">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
-            <div class="carrossel-img">
-                <div class="imagem-nome">
-                  
-                </div>
-                
-                <h1 class="nome">Nome</h1>
-            </div>            
-
-        </div>
-        <div class="divisoes">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
-            <div class="carrossel-img">
-                <div class="imagem-nome">
-                  
-                </div>
-                
-                <h1 class="nome">Nome</h1>
-            </div>            
-
-        </div>
-        <div class="divisoes">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie pulvinar nisi at rutrum. Aliquam faucibus tortor non diam commodo posuere. In nec ante nisl.”</p>
-            <div class="carrossel-img">
-                <div class="imagem-nome">
-                  
-                </div>
-                
-                <h1 class="nome">Nome</h1>
-            </div>            
-
-        </div>
-
+                <h1 class="nome"><%= comentario.comentador.nome %></h1>
+                </div>            
+            </div>
+                    
+    <% }) %>
     </section>
 
     <section class="sessao">
         <div class="sessao-imagem">
             <img src="" alt="">
         </div>
+        <form action="/comentsPage" method="POST" class="form">
         <div class="inputs">
-            <input class="inputNome" type="text">
-            <input class="coment" type="text" placeholder="Digite Seu comentário aqui!">
-            <button>ENVIAR</button>
+            <textarea class="coment" type="text" name='texto' placeholder="Digite Seu comentário aqui!"></textarea>
+            <button type="submit">ENVIAR</button>
         </div>
+        </form>
     </section>
     <%- include('./partials/footer') %> 
     <script src="/js/menuDrop.js"></script>

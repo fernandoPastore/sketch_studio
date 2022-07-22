@@ -1,14 +1,17 @@
 
 .comentarios{
-    background-color:#1F1F20;
-    padding: 15px;
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    margin-bottom: 30px;
+   margin-top:50px;
+   width: 100%;
+   color: white;
+   background-color:#1F1F20;
+   padding: 30px;
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 20px;
 }
 
 .carrossel{
+    margin-top:50px;
     margin-left: 4%;
     margin-right: 4%;
     display: flex;
@@ -55,15 +58,18 @@
  }
 
  .sessao{
-    background-image: url("../img/Mic\ IMG.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 150px;
-    height: 800px;
-    padding-top: 100px;
+
+   background-image: url("../img/MIC.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin-top: 150px;
+   margin-bottom: 50px;
+   height: 800px;
+   padding-top: 100px;
+   border: 20px solid #1F1F20;
     
  }
 
