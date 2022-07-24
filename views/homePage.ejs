@@ -20,9 +20,9 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/homePage">Home Page</a>
         <a href="/editPage">Minha Conta</a>
-        <a href="#">Comentários</a>
-        <a href="#">Sobre Nós</a>
-        <a href="#">Discord</a>
+        <a href="/comentsPage">Comentários</a>
+        <a href="sobreNos">Sobre Nós</a>
+        <a href="">Discord</a>
       </div>
     </header>
     <section class="home-container">
@@ -39,20 +39,8 @@
           de maneira fácil e simples. <br>
 
         </h1>
+        <button id="btn-m1"><a class="ref-contentPage" href="/contentPage">Comece Agora</a></button>
       </div>
-      <form action="/homePage" method="post"class="form">
-          <h2 id="textForm">Preencha com os Parâmetros do Seu Futuro Studio</h2>
-            <label>Largura:
-              <input type="number" name="largura" step="0.1" min="0" class="form-field" placeholder="m">
-            </label>
-            <label >Comprimento:
-              <input type="number" name="comprimento" step="0.1" min="0" class="form-field" placeholder="m">
-            </label>
-            <label >Altura:
-              <input type="number" name="altura" step="0.1" min="0" class="form-field" placeholder="m">
-            </label>
-          <button id="btn-m1" type="submit">Crie Seu Studio</button>
-        </form>
     </div>
 <%- include('./partials/footer') %> 
 </section>

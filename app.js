@@ -5,10 +5,12 @@ const methodOverride = require('method-override');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const logger = require('morgan');
+const adminRoute = require('./routes/Admin.Router')
 
 
 //Importandno rotas
 const UserRouter = require('./routes/UserRouter');
+const ComentsRouter = require('./routes/ComentsRouter');
 
 
 const app = express();
@@ -25,6 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 
+
 //Sessions
 app.use(session({
   secret:"segredo",
@@ -34,6 +37,8 @@ app.use(session({
 
 // Usando Rotas
 app.use(UserRouter);
+app.use(ComentsRouter);
+app.use(adminRoute)
 
 
 // catch 404 and forward to error handler

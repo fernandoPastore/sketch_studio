@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,54 +11,48 @@
     <link rel="stylesheet" href="/css/contentPage.css">
     <link rel="stylesheet" href="/css/footer.css">
 </head>
+
 <body>
     <%- include("./partials/header") %>
-    <section class="section-um">
-        <h1 class="titulo">Calculadora de Dimensão Modal</h1>
-        <div>
-            <label>
-                Largura:  
-                <input 
-                     type="text">
-            </label>
-            <label>
-                Comprimento:  
-                <input 
-                     type="text">
-            </label>
-            <label>
-                Largura:  
-                <input 
-                     type="text">
-            </label>
+    <section>
+        <h1 class="introducao">INTRODUÇÃO</h1>
+        <div class="passo-flex">
+            <h1 class="text-decor"> PRIMEIRO PASSO. </h1>
+            <h2 class="h2-decor">Para entender de forma clara como funciona toda a acústica
+            de um ambiente é necessário entender alguns conceitos antes de começarmos.
+            O tema "acústica de salas" envolve muitos fundamentos que permeiam a física, biologia, arquitetura, 
+            entre tantos outros, sendo a maioria destes de alta complexidade e cheio de contas, entretanto é possível ter 
+            uma visão abrangente de como os sons se comportam dentro de ambientes fechados sem nos aprofundarmos na matemática
+            para que possamos condicionar esses espaços onde gravamos e escutamos música almejando melhores resultados.</h2>
         </div>
-        <div class="grafico"></div>
-        <div class="axiais-primária">
-            
-            <div class="axiais">
-                <div>
-                    <h1>Axiais Primárias</h1>
-                    
-                    <label>
-                        Largura:  
-                        <input 
-                             type="text">
-                    </label>
-                    <label>
-                        Comprimento:  
-                        <input 
-                             type="text">
-                    </label>
-                    <label>
-                        Largura:  
-                        <input 
-                             type="text">
-                    </label>
-                </div>
-                <img src="/img/contentimg1.jpg" alt="">
+        <div class="passo-flex">
+            <h1 class="text-decor">SEGUNDO PASSO.</h1>
+            <h2 class="h2-decor">Baixar a Calculadora de Densidade Modal</h2>        
+            <button class="btn-baixar" type="button"><a href="/spreadsheet/Calculadora_de_Modos.xls" download>
+                Clique aqui para baixar a Calculadora</a></button>
+
+            <h2 class="h2-decor">Ela será necessária para construir seu HomeStudio e entender a dinâmica do som no espaço.</h2>
+        </div>
+    
+    </section>
+    <section >
+        <iframe class="iframe" src="https://onlinetonegenerator.com/"></iframe>
+    </section>
+
+    <section class="section-dois">
+        <h1 class="titulo">COMO APLICAR O USO DA DENSIDADE MODAL PARA PLANEJAMENTO DA <br> ACUSTICA DO
+            ESTUDIO</h1>
+            <div class="video">
+                <iframe class="iframe" src="https://www.youtube.com/embed/vuClLAeDw4I?list=RDvuClLAeDw4I" 
+                title="VOCÊ VAI SE EMOCIONAR COM ESSA MÚSICA"
+                 frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen>
+                </iframe>
             </div>
 
         </div>
+<<<<<<< HEAD
         
         <div class="explicacao">
             <a href="">Explicação em details <br> sobre as Axiais</a>
@@ -77,6 +72,8 @@
             </iframe>
                 
             </div>  
+=======
+>>>>>>> c16c00a3e601dfa775b151e7c4c910caad71ff4f
         </div>
     </section>
     <section class="section-tres">
@@ -89,32 +86,50 @@
                     </iframe></div>
                 <img class="imagem" src="/public/img/Vector 3.svg" alt="">
             </div>
-            <p class="p-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ut odio nulla faucibus velit egestas. Nulla ut erat pretium massa. Curabitur id enim sollicitudin egestas a, dignissim ac mauris. Elit, dui quis convallis in eget a vitae, turpis. A auctor varius eu in semper. Aliquam lacus orci feugiat aenean euismod.</p>
+            <p class="p-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ut odio nulla
+                faucibus velit egestas. Nulla ut erat pretium massa. Curabitur id enim sollicitudin egestas a, dignissim
+                ac mauris. Elit, dui quis convallis in eget a vitae, turpis. A auctor varius eu in semper. Aliquam lacus
+                orci feugiat aenean euismod.</p>
         </div>
         <div class="section-tres-geral">
             <h1 class="titulo">ACUSTICA</h1>
             <div class="conteiners">
                 <img class="imagem" src="/public/img/Vector 3.svg" alt="">
-                <div class="video" >,
-                    <iframe class="iframe" src="https://www.youtube.com/embed/vuClLAeDw4I?list=RDvuClLAeDw4I" title="VOCÊ VAI SE EMOCIONAR COM ESSA MÚSICA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video">,
+                    <iframe class="iframe" src="https://www.youtube.com/embed/vuClLAeDw4I?list=RDvuClLAeDw4I"
+                        title="VOCÊ VAI SE EMOCIONAR COM ESSA MÚSICA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     </iframe></div>
                 <img class="imagem" src="/public/img/Vector 3.svg" alt="">
             </div>
-            <p class="p-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ut odio nulla faucibus velit egestas. Nulla ut erat pretium massa. Curabitur id enim sollicitudin egestas a, dignissim ac mauris. Elit, dui quis convallis in eget a vitae, turpis. A auctor varius eu in semper. Aliquam lacus orci feugiat aenean euismod.</p>
+            <p class="p-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ut odio nulla
+                faucibus velit egestas. Nulla ut erat pretium massa. Curabitur id enim sollicitudin egestas a, dignissim
+                ac mauris. Elit, dui quis convallis in eget a vitae, turpis. A auctor varius eu in semper. Aliquam lacus
+                orci feugiat aenean euismod.</p>
         </div>
         <div class="section-tres-geral">
             <h1 class="titulo">EQUIPAMENTOS</h1>
             <div class="conteiners">
                 <img class="imagem" src="/public/img/Vector 3.svg" alt="">
-                <div class="video" >
-                    <iframe class="iframe" src="https://www.youtube.com/embed/vuClLAeDw4I?list=RDvuClLAeDw4I" title="VOCÊ VAI SE EMOCIONAR COM ESSA MÚSICA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video">
+                    <iframe class="iframe" src="https://www.youtube.com/embed/vuClLAeDw4I?list=RDvuClLAeDw4I"
+                        title="VOCÊ VAI SE EMOCIONAR COM ESSA MÚSICA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     </iframe></div>
                 <img class="imagem" src="/public/img/Vector 3.svg" alt="">
             </div>
-            <p class="p-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ut odio nulla faucibus velit egestas. Nulla ut erat pretium massa. Curabitur id enim sollicitudin egestas a, dignissim ac mauris. Elit, dui quis convallis in eget a vitae, turpis. A auctor varius eu in semper. Aliquam lacus orci feugiat aenean euismod.</p>
+            <p class="p-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ut odio nulla
+                faucibus velit egestas. Nulla ut erat pretium massa. Curabitur id enim sollicitudin egestas a, dignissim
+                ac mauris. Elit, dui quis convallis in eget a vitae, turpis. A auctor varius eu in semper. Aliquam lacus
+                orci feugiat aenean euismod.</p>
         </div>
     </section>
-    <%- include('./partials/footer') %> 
+
+    <%- include('./partials/footer') %>
     <script src="/js/menuDrop.js"></script>
+ 
 </body>
+
 </html>

@@ -1,0 +1,131 @@
+*{
+    margin: 5px ;
+}
+
+table{
+ width: 95% !important;
+ margin: auto;
+}
+
+
+
+body {
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white; 
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.form {
+    padding: 40px 30px;
+    background-color: #030b1a;
+    border-radius: 5px;
+    border: 2px solid #030612;
+    width: 450px;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #828CAD;
+    text-align: end;
+}
+
+.form-control input {
+    border: 2px solid #8d95b7;
+    border-radius: 5px;
+    outline: 0;
+    margin: auto;
+    display: block;
+    font-size: 20px;
+    width: 70%;
+    padding: 15px;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+    left: 50px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility:hidden ;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+.form button {
+    background-color: #2e52c8;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    cursor: pointer;
+    margin: 0 150px;
+}
+
+.form button:hover {
+    background-color: #4ECA64;
+    transition: 0.3s;
+}
+
+button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 500ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+    background-color: #4ECA64;
+   
+}
+
+button:hover::before {
+    transform: scaleX(1);
+    
+}

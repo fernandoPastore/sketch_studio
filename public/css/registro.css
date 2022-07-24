@@ -1,25 +1,25 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Poppins;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background-image: url("/img/img_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    border: 0;
 }
-
-.registroContainer { 
-    height: 100vh;  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 main {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    height: 550px;
-    width: 22rem;
-    padding: 2rem;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
@@ -27,61 +27,127 @@ main {
     box-shadow: -4px 10px 10px 10px #00000056;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.container {
+    border-radius: 5px;   
+    width: 450px;
+    max-width: 100%;
 }
 
-.header > h4 {
-    font-weight: normal;
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.845);
+.header {
+    padding: 30px 40px;
 }
 
-.header > img {
-    margin-bottom:10px;
-    width: 100%;
+.header h2 {
+    font-weight: 600;
+    color: #ACBAE1;
+    font-size: 30px;
 }
 
-.form {
-    width:100%;
+.form-control {
+    margin: 10px 80px;
+    padding-bottom: 20px;
+    position: relative;
+    
 }
-.form-field {
-    height: 46px;
-    padding: 0 16px;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    font-family: 'Abel', sans-serif;
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #828CAD;
+}
+
+.form-control input {
+    border: 2px solid #3E445B;
+    border-radius: 5px;
     outline: 0;
-    margin-top: 20px;
+
+    display: block;
+
+    font-size: 14px;
+
+    width: 100%;
+    padding: 15px;
 }
 
-.form > p {
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility:hidden ;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+.form button {
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 150px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #584ff5;
+    transition: 0.3s;
+}
+.cadastrado{
     margin-top: 30px;
     text-align: center;
 }
 
-.form > p > a {
+.cadastrado a {
     color:rgba(0, 0, 0, 0.845);
     font-size: 14px;
   }
+  
 
-.btn-nos {
-    margin-top:100px;
+footer {
+    margin: 40px 100px;
+
 }
 
 .btn-nos button {
     width:17rem;
-    padding: 12px 10px;
+    padding: 10px 10px;
     border: 0;
     background: #1F1F20;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-top: 10px;
     color: #fff;
     letter-spacing: 1px;
     box-shadow: -4px 0px 10px 5px #00000056;
+    margin-bottom: 30px;
 }
 
 .btn-nos button > a {
