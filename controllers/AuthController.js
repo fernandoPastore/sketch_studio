@@ -90,7 +90,7 @@ const AuthController = {
     },
     showSobreNos: (req, res) => {
         res.render('sobreNos')
-    },
+    }
 }
 
 module.exports = AuthController;

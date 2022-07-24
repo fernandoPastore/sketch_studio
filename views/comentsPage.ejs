@@ -23,8 +23,6 @@
            
             <p><strong>Descrição:</strong> <%= comentario.texto %></p>
             <div class="carrossel-img">
-                <div class="imagem-nome">
-                </div>
                 <h1 class="nome"><%= comentario.comentador.nome %></h1>
                 </div>            
             </div>
@@ -33,9 +31,6 @@
     </section>
 
     <section class="sessao">
-        <div class="sessao-imagem">
-            <img src="" alt="">
-        </div>
         <form action="/comentsPage" method="POST" class="form">
         <div class="inputs">
             <textarea class="coment" type="text" name='texto' placeholder="Digite Seu comentário aqui!"></textarea>
