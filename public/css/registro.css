@@ -27,7 +27,7 @@ main {
     box-shadow: -4px 10px 10px 10px #00000056;
 }
 
-.container {
+.form {
     border-radius: 5px;   
     width: 450px;
     max-width: 100%;
@@ -53,7 +53,7 @@ main {
 .form-control label {
     display: inline-block;
     margin-bottom: 5px;
-    color: #828CAD;
+    color: #828CAD !important;
 }
 
 .form-control input {

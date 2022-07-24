@@ -188,3 +188,18 @@ section{
     }
     
 }
+.hz{
+    width: 490px;
+    height: 1000px;
+    border: 100px solid #1F1F20;
+
+}
+
+
+.sobrepor{
+    position: absolute;
+    
+    border-top: 50px solid #1F1F20;
+    
+
+}
